@@ -11,13 +11,13 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
 add_executable(vital_signs_display_node src/vital_signs_display.cpp)
-ament_target_dependencies(vital_signs_display_node
+  ament_target_dependencies(vital_signs_display_node
   rclcpp
   std_msgs
 )
 
 install(TARGETS
-vital_signs_display_node
+  vital_signs_display_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
