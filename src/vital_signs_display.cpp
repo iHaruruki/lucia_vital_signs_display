@@ -16,7 +16,7 @@ public:
     const std::vector<int> ids = {10, 11, 12};
 
     for (int id : ids) {
-      const std::string prefix = "vital/ID:" + std::to_string(id) + "/";
+      const std::string prefix = "vital/ID_" + std::to_string(id) + "/";
 
       // Heart Rate (Int32)
       hr_subs_.push_back(
