@@ -16,7 +16,7 @@ public:
     // ボードIDのリスト
     const std::vector<std::string> ids{"A","B","C"};
     for (const auto &id : ids) {
-      add_subscription<std_msgs::msg::Int32>(id, "hr",     20.0,  200.0);
+      add_subscription<std_msgs::msg::Int32>(id, "hr",     30.0,  200.0);
       add_subscription<std_msgs::msg::Float32>(id, "spo2",   80.0,  100.0);
       add_subscription<std_msgs::msg::Int32>(id, "sys_bp", 100.0, 200.0);
       add_subscription<std_msgs::msg::Int32>(id, "dia_bp",  30.0,  90.0);
