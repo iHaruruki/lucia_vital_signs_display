@@ -30,10 +30,10 @@ class RandomPub(Node):
     def publish_random(self):
         for topic, msg_type in self.topics:
             if msg_type is Float32:
-                val = random.uniform(90.0, 100.0)
+                val = random.uniform(0.0, 100.0)
                 msg = Float32(data=val)
             else:
-                val = random.randint(60, 100)
+                val = random.randint(0, 150)
                 msg = Int32(data=val)
             self.pubs[topic].publish(msg)
 
